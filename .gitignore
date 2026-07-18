@@ -1,0 +1,6 @@
+# Ignore surveys
+private/results/*
+
+# Ignore Mac/Windows sys files
+.DS_Store
+Thumbs.db
