@@ -7,3 +7,6 @@ Thumbs.db
 
 # Ignore database
 private/database.sqlite
+
+# Ignore user list
+users.json
