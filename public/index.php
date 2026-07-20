@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_SESSION['username'] = $user['username'];
                 
                 // Weiterleitung zur Umfrage
-                header("Location: umfrage.php");
+                header("Location: survey.php");
                 exit;
             }
         } else {
