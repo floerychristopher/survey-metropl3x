@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Leite leere Aufrufe (das Hauptverzeichnis) intern auf public/index.php um
+    RewriteRule ^$ public/index.php [L]
+    
+    # Verhindere Endlosschleife: Wenn Aufruf nicht schon auf /public/ zielt
+    RewriteCond %{REQUEST_URI} !^/public/
+    
+    # dann schreibe URL intern auf public-Ordner um
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
